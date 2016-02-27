@@ -79,7 +79,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "dest": [          // destination
                         {
                             "x": 45,
-	                    "y": 0,    // this game will be handled onlt X-Z axis, so please keep 0 value in Y-axis
+	                    "y": 0,    // this game will be handled onlt X-Z axis, keep 0 value in Y-axis
                             "z": 56
                         }
                     ],
@@ -98,7 +98,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "dest": [         // destination cordinate
                         {
                             "x": 0, 
-                            "y": 0,   // this game will be handled onlt X-Z axis, so please keep 0 value in Y-axis
+                            "y": 0,   // this game will be handled onlt X-Z axis, keep 0 value in Y-axis
                             "z": 5
                         }
                     ],
@@ -162,7 +162,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                 {
                     "frame": 200,          // Framne starting to shot 
                     "type": "sign",        // sign shot
-                    "dest": [              // destination coordinate, but this vestor do not influence shot speed
+                    "dest": [              // destination, this vestor do not influence shot speed
                         {
                             "x": 0,
                             "y": 0,
