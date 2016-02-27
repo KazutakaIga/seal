@@ -73,7 +73,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "dest": [          // destination
                         {
                             "x": 45,
-	                            "y": 0,    // this game will be handled onlt X-Z axis, so please keep 0 value in Y-axis
+	                    "y": 0,    // this game will be handled onlt X-Z axis, so please keep 0 value in Y-axis
                             "z": 56
                         }
                     ],
@@ -83,8 +83,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 ```
 
 + Shot Information Section  
+1. normal shot
 ```
-#### normal shot ####
 			"shot": [
                 {
                     "frame": 200,     // Frame stating to shot
@@ -101,9 +101,10 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "speed": 5        // shot speed
                 }
 		     ]
-```			
+```  
+
+2. tracking shot
 ```
-#### tracking shot ####
             "shot": [
                 {
                     "frame": 200,       // Frame stating to shot
@@ -113,9 +114,10 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "speed": 5          // shot speed
                 }
 		     ]
-```		 
+```  
+
+3. spiral shot
 ```
-#### spiral shot ####
             "shot": [
                 {
                     "frame": 200,           // Frame stating to shot
@@ -129,9 +131,10 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "speed": 30             // shot speed
                 }
 			]
-```		 
+```  
+
+4. random shot
 ```
-#### random shot ####
             "shot": [
                 {
                     "frame": 200,          // Frame starting to shot
@@ -145,10 +148,10 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "shotNum": 20          // over all random shot num
                 }
 			]
-```		 
-			 
+```  
+
+5. sign shot
 ```
-#### sign shot ####
             "shot": [
                 {
                     "frame": 200,          // Framne starting to shot 
