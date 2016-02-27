@@ -1,23 +1,27 @@
 Name
-====
+***
 Sealing (2D like 3D shooting game, which describe with THREE.js)
 
 ## Description/Feature
+***
 + This is sample for webGL, THREE.js API
 + 2D like shooting game.
 + Base Model is MMD format(.pmx)
 + converted pmx to JSON by Blender(https://www.blender.org/)
 
 ## Screen Shot
+***
 ![リンクテキスト](http://i.imgur.com/LFkUOlg.jpg "タイトル")
 
 ## Installation
+***
 You only put these files in some directory under apache document root.  
 Then access main.php
 
 http://your apache server IP/some directory/main.php
 
 ## Files Outline(same name object described in each files)
+***
 ```
 + main.php
   - js/Include.js                : Include other html files(not related game)
@@ -37,11 +41,13 @@ http://your apache server IP/some directory/main.php
 ```
 
 ## Code Structure
+***
 All game information is described in json files under "js/settings/".  
 JS code only parse this json file in GameControl.incrementGameFrame,  
 so you can change enemy info and enemy shot info by setting temp.json.  
 
 ## About Game Setting JSON 
+***
 This file describes enemy information when and where enemy appear, when start to move,  
 when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 
