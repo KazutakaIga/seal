@@ -83,8 +83,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 ```
 
 + Shot Information Section  
-- normal shot  
 ```
+#### normal shot ####
 			"shot": [
                 {
                     "frame": 200,     // Frame stating to shot
@@ -102,9 +102,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                 }
 		     ]
 ```			
-	
-- tracking shot  
-```		
+```
+#### tracking shot ####
             "shot": [
                 {
                     "frame": 200,       // Frame stating to shot
@@ -115,9 +114,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                 }
 		     ]
 ```		 
-			 
-- spiral shot
 ```
+#### spiral shot ####
             "shot": [
                 {
                     "frame": 200,           // Frame stating to shot
@@ -132,9 +130,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                 }
 			]
 ```		 
-
-- random shot
 ```
+#### random shot ####
             "shot": [
                 {
                     "frame": 200,          // Frame starting to shot
@@ -150,8 +147,8 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 			]
 ```		 
 			 
-- sign shot
-```		 
+```
+#### sign shot ####
             "shot": [
                 {
                     "frame": 200,          // Framne starting to shot 
