@@ -46,7 +46,7 @@ This file describes enemy information when and where enemy appear, when start to
 when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 
 
-# Basic Information Section  
+### Basic Information Section  
 ```
             "enemyID": 1,        // enemyID. Currently only 1 type enemy, so please insert 1.  
             "enemyName": "NaN",  // "NaN", not use this name in code 
@@ -64,7 +64,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
             ]
 ```
 
-# Move Information Section 
+### Move Information Section 
 ```
             "move": [
                 {
@@ -82,7 +82,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
             ]
 ```
 
-# Shot Information Section  
+### Shot Information Section  
 + normal shot
 ```
 			"shot": [
