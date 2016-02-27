@@ -1,5 +1,5 @@
 Name
-***
+===
 Sealing (2D like 3D shooting game, which describe with THREE.js)
 
 ## Description/Feature
@@ -89,7 +89,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 ```
 
 ### Shot Information Section  
-+ normal shot
+##### normal shot
 ```
 			"shot": [
                 {
@@ -109,7 +109,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 		     ]
 ```  
 
-+ tracking shot
+##### tracking shot
 ```
             "shot": [
                 {
@@ -122,7 +122,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 		     ]
 ```  
 
-+ spiral shot
+##### spiral shot
 ```
             "shot": [
                 {
@@ -139,7 +139,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 			]
 ```  
 
-+ random shot
+##### random shot
 ```
             "shot": [
                 {
@@ -156,7 +156,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
 			]
 ```  
 
-+ sign shot
+##### sign shot
 ```
             "shot": [
                 {
