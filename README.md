@@ -79,7 +79,7 @@ when start to shot, what kind of shot. Please refer "js/setting/temp.json"
                     "dest": [          // destination
                         {
                             "x": 45,
-	                    "y": 0,    // this game will be handled onlt X-Z axis, keep 0 value in Y-axis
+                            "y": 0,    // this game will be handled onlt X-Z axis, keep 0 value in Y-axis
                             "z": 56
                         }
                     ],
