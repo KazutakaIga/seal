@@ -1,0 +1,210 @@
+{
+    "1": [
+        {
+            "enemyID": 1,
+            "enemyName": "synahai",
+            "enableFrame": 10,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -100,
+                    "y": 0,
+                    "z": 0
+                }
+            ],
+            "move": [
+                "empty"
+            ],
+            "shot": [
+                "empty"
+            ]
+        }
+    ],
+    "2": [
+        {
+            "enemyID": 1,
+            "enemyName": 0,
+            "enableFrame": 100,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 100,
+                    "y": 0,
+                    "z": 0
+                }
+            ],
+            "move": [
+                {
+                    "frame": 150,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "z": -300
+                        }
+                    ],
+                    "speed": 1
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 200,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "z": 5
+                        }
+                    ],
+                    "interval": 30,
+                    "shotNum": 10,
+                    "speed": 5
+                },
+                {
+                    "frame": 110,
+                    "type": "random",
+                    "randomXMin": -500,
+                    "randomXMax": 500,
+                    "randomZMin": -500,
+                    "randomZMax": 500,
+                    "interval": 30,
+                    "randomShotNum": 10,
+                    "shotNum": 5
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "enemyID": 1,
+            "enemyName": 0,
+            "enableFrame": 100,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": -500
+                }
+            ],
+            "move": [
+                {
+                    "frame": 400,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": 100,
+                            "y": 0,
+                            "z": -300
+                        }
+                    ],
+                    "speed": 10
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 410,
+                    "type": "spiral",
+                    "r": 30,
+                    "rSpeed": 1,
+                    "intervalAngle": 0.52,
+                    "angleSpeed": 0.00314,
+                    "interval": 30,
+                    "shotNum": 30,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "4": [
+        {
+            "enemyID": 1,
+            "enemyName": 0,
+            "enableFrame": 100,
+            "hp": 1,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            ],
+            "move": [
+                {
+                    "frame": 150,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "z": -300
+                        }
+                    ],
+                    "speed": 1
+                }
+            ],
+            "shot": [
+                "empty"
+            ]
+        }
+    ],
+    "5": [
+        {
+            "enemyID": 1,
+            "enemyName": "synahai",
+            "enableFrame": 400,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": -500
+                }
+            ],
+            "move": [
+                {
+                    "frame": 400,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": -100,
+                            "y": 0,
+                            "z": -300
+                        }
+                    ],
+                    "speed": 10
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 410,
+                    "type": "spiral",
+                    "r": 30,
+                    "rSpeed": 1,
+                    "intervalAngle": 0.52,
+                    "angleSpeed": 0.00314,
+                    "interval": 30,
+                    "shotNum": 30,
+                    "speed": 5
+                }
+            ]
+        }
+    ]
+}

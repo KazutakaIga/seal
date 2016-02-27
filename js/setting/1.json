@@ -1,0 +1,503 @@
+{
+    "1": [
+        {
+            "enemyID": 1,
+            "enemyName": "synahai",
+            "enableFrame": 10,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -300,
+                    "y": 0,
+                    "z": -300
+                }
+            ],
+            "move": [
+                "empty"
+            ],
+            "shot": [
+                "empty"
+            ]
+        }
+    ],
+    "2": [
+        {
+            "enemyID": 1,
+            "enemyName": 0,
+            "enableFrame": 100,
+            "hp": 100,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 350,
+                    "y": 0,
+                    "z": -400
+                }
+            ],
+            "move": [
+                "empty"
+            ],
+            "shot": [
+                {
+                    "frame": 110,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": 61,
+                            "y": 0,
+                            "z": -312
+                        }
+                    ],
+                    "interval": 30,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 110,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 160,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": -166,
+                            "y": 0,
+                            "z": -209
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 120,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "4": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 130,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 180,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 181,
+                            "y": 0,
+                            "z": -295
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 140,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "5": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 160,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 210,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 165,
+                            "y": 0,
+                            "z": -202
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 170,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "6": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 160,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 210,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": -168,
+                            "y": 0,
+                            "z": -238
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 170,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "7": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 190,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 240,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": 150,
+                            "y": 0,
+                            "z": -249
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 200,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "8": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 199,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -160,
+                    "y": 0,
+                    "z": 370
+                }
+            ],
+            "move": [
+                {
+                    "frame": 249,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": -166,
+                            "y": 0,
+                            "z": -342
+                        }
+                    ],
+                    "speed": 3
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 209,
+                    "type": "tracking",
+                    "interval": 10,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ],
+    "9": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 210,
+            "hp": 10,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": -80,
+                    "y": 0,
+                    "z": -570
+                }
+            ],
+            "move": [
+                {
+                    "frame": 260,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": -95,
+                            "y": 0,
+                            "z": -300
+                        }
+                    ],
+                    "speed": 5
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 220,
+                    "type": "random",
+                    "randomXMin": -500,
+                    "randomXMax": 500,
+                    "randomZMin": -500,
+                    "randomZMax": 500,
+                    "interval": 30,
+                    "randomShotNum": 10,
+                    "shotNum": 5
+                }
+            ]
+        }
+    ],
+    "10": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 210,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 80,
+                    "y": 0,
+                    "z": -570
+                }
+            ],
+            "move": [
+                {
+                    "frame": 260,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 87,
+                            "y": 0,
+                            "z": -262
+                        }
+                    ],
+                    "speed": 5
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 220,
+                    "type": "random",
+                    "randomXMin": -500,
+                    "randomXMax": 500,
+                    "randomZMin": -500,
+                    "randomZMax": 500,
+                    "interval": 30,
+                    "randomShotNum": 10,
+                    "shotNum": 5
+                }
+            ]
+        }
+    ],
+    "11": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 412,
+            "hp": 50,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "z": -570
+                }
+            ],
+            "move": [
+                {
+                    "frame": 462,
+                    "type": "null",
+                    "dest": [
+                        {
+                            "x": -4,
+                            "y": 0,
+                            "z": -335
+                        }
+                    ],
+                    "speed": 5
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 462,
+                    "type": "random",
+                    "randomXMin": -500,
+                    "randomXMax": 500,
+                    "randomZMin": -500,
+                    "randomZMax": 500,
+                    "interval": 10,
+                    "randomShotNum": 30,
+                    "shotNum": 30
+                },
+                {
+                    "frame": 422,
+                    "type": "spiral",
+                    "r": 30,
+                    "rSpeed": 3,
+                    "intervalAngle": 0.52,
+                    "angleSpeed": 0.00314,
+                    "interval": 15,
+                    "shotNum": 50,
+                    "speed": 10
+                }
+            ]
+        }
+    ],
+    "12": [
+        {
+            "enemyID": 1,
+            "enemyName": "NaN",
+            "enableFrame": 582,
+            "hp": 3,
+            "powerItem": 2,
+            "scoreItem": 2,
+            "bombItem": 0,
+            "initPos": [
+                {
+                    "x": 350,
+                    "y": 0,
+                    "z": -400
+                }
+            ],
+            "move": [
+                {
+                    "frame": 632,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": -191,
+                            "y": 0,
+                            "z": 173
+                        }
+                    ],
+                    "speed": 10
+                }
+            ],
+            "shot": [
+                {
+                    "frame": 632,
+                    "type": null,
+                    "dest": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "z": 5
+                        }
+                    ],
+                    "interval": 30,
+                    "shotNum": 10,
+                    "speed": 5
+                }
+            ]
+        }
+    ]
+}

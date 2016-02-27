@@ -1,0 +1,87 @@
+<script type='text/javascript' src='./api/jquery-2.1.4.min.js'></script>
+<script type="text/javascript" src="./js/Menu.js"></script>
+<script type="text/javascript" src="./js/Key.js"></script>
+<!--
+<div class="mainTitle">
+  <img id="mainTitle" src="./htmlImg/title.jpg">
+</div>
+-->
+
+<div id="login" style="visibility : hidden">
+    <div id="loginname">username : <input id="name" type="text" size="20"></input></div>
+    <div id="loginpass">password : <input id="pass" type="password"  size="20"></input></div>
+    <div id="loginbutton"><input type="submit" value="login"></div>
+  <div id="loginerror"></div>
+</div>
+
+<div class="navi">
+  <ul>
+    <li><a href="main.php">PLAY</a></li>
+    <li><a href="edit.php">EDIT</a></li>
+  </ul> 
+</div>
+
+<div id="userInfo" class="infoTable">
+  <div id="username"></div>
+  <div id="play"></div>
+  <div id="clear"></div>
+  <div id="favorite"></div>
+</div>
+
+<script>
+function User(){
+    this.userInfo = null,
+
+    this.initUser = function(data){
+        this.userInfo = data;
+        }
+    };
+user = new User();
+
+$(function(){
+    $.post("./php/checkLoggedIn.php",
+           function(data){
+        if(Number(data) != -1){
+            $("#login").empty();
+            data = JSON.parse(data);
+            console.log(data);
+            user.initUser(data);
+            $("#login").text("ようこそ " + user.userInfo["name"] + " さん");
+            $("#login").css({"font-size" : 20});
+            }
+        else{
+            $("#login").css({ "visibility": "visible" });
+            }
+        });
+    });
+
+
+$("#loginbutton").bind("click",
+                       function(){
+    $.post(
+        "./php/login.php",
+        {"name" : $("#name").val(),
+        "pass" : $("#pass").val()},
+        function(data){
+            if(data == -1) $("#loginerror").text("ユーザー名 or パスワードが違います");
+            else{
+                $("#login").empty(); 
+                data = JSON.parse(data);
+                user.initUser(data);
+                console.log(user.userInfo);
+                $("#login").text("ようこそ " + user.userInfo["name"] + " さん");
+                $("#login").css({"font-size" : 20});
+                }
+        });
+    });
+/*
+$("#mainTitle").bind("click",
+                      function(){
+    document.location.href = "top.html";
+    });
+*/
+$("input").focus(function(){
+  key.updatePreventDefaultFlag(false);
+  });
+
+</script>

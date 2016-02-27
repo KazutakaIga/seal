@@ -1,0 +1,24 @@
+/* ラジオボタンは非表示にする */
+input[type=radio] {
+  display: none; 
+}
+/* チェックされた時のスタイル */
+input[type="radio"]:checked + label {
+  background: #0063A4;
+  color: #FFF; 
+}
+/* マウスオーバーしたときのスタイル */
+.label:hover {
+  background-color: #E2EDF9; 
+}
+/* lableのスタイル */
+.label {
+  color: #000;
+  border: #dddddd solid 2px;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer; 
+}

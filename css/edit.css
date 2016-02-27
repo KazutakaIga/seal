@@ -1,0 +1,381 @@
+/*
+#body{
+    background-repeat:no-repeat;
+    background-attachment: fixed,
+                           fixed;
+    background-image: url("../htmlImg/background/background1.jpg"),url("../htmlImg/background/background2.jpg");
+    background-position : 0% 200%,
+                          800px 100px;
+    font-family : Meiryo;
+    height      : 800px;
+}
+*/
+
+#canvas{
+    position : absolute;
+    top   : 90px;
+    left  : 200px;
+    width : 300px;
+    height: 450px;
+
+    border: 2px solid #0000FF;
+    padding:2px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    box-shadow:0px 0px 10px 10px #6666bb;
+    -moz-box-shadow:0px 0px 10px 10px #6666bb;
+    -webkit-box-shadow:0px 0px 10px 10px #6666bb;
+}
+
+.infoTable{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #eeffff), color-stop(1.00, #ccccff));
+    background: -webkit-linear-gradient(#eeffff, #ccccff);
+    background: -moz-linear-gradient(#eeffff, #ccccff);
+    background: -o-linear-gradient(#eeffff, #ccccff);
+    background: -ms-linear-gradient(#eeffff, #ccccff);
+    background: linear-gradient(#eeffff, #ccccff);
+    margin:0px;
+    padding:5px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    box-shadow:0px 0px 5px 5px #6666bb;
+    -moz-box-shadow:0px 0px 5px 5px #6666bb;
+    -webkit-box-shadow:0px 0px 5px 5px #6666bb;
+
+    font-family : Meiryo;
+    font-weight : bold;
+    }
+
+.information{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #ffffff), color-stop(1.00, #9999ff));
+  background: -webkit-linear-gradient(#ffffff, #9999ff);
+  background: -moz-linear-gradient(#ffffff, #9999ff);
+  background: -o-linear-gradient(#ffffff, #9999ff);
+  background: -ms-linear-gradient(#ffffff, #9999ff);
+  background: linear-gradient(#ffffff, #9999ff);
+  margin:  0px;
+  padding: 5px;
+  box-shadow:0px 0px 3px 3px #6666bb;
+  -moz-box-shadow:0px 0px 3px 3px #6666bb;
+  -webkit-box-shadow:0px 0px 3px 3px #6666bb;
+  color: #0000aa;
+
+  font-family : Meiryo;
+  font-weight : bold;
+  }
+
+#information{
+  position : absolute;
+  left     : 280px;
+  top      : 45px;
+  width    : 360px;
+  height   : 60px;
+  }
+
+#enableGrid{
+  position : absolute;
+  top      : 560px;
+  left     : 200px;
+  width    : 120px;
+  height   : 30px;
+  }
+
+#disableGrid{
+  position : absolute;
+  top      : 560px;
+  left     : 360px;
+  width    : 120px;
+  height   : 30px;
+  }
+
+#targetTitle{
+  position : absolute;
+  top      : 20px;
+  left     : 500px;
+  width    : 300px;
+  }
+
+
+#edit{
+  position : absolute;
+  top      : 20px;
+  left     : 530px;
+  font-family : Meiryo;
+  }
+
+#editEnemy{
+  position : absolute;
+  top      : 130px;
+  left     : 150px;
+  width    : 60px;
+  }
+
+#editEnemyInfo{
+  position : absolute;
+  top      : 140px;
+  left     : 230px;
+  width    : 310px;
+  z-index  : 10;
+  }
+
+#editEnemyInfoCommit{
+  position : absolute;
+  top      : 150px;
+  left     : 460px;
+  width    : 150px;
+  z-index  : 10;
+  }
+
+#editEnemyInfoCancel{
+  position : absolute;
+  top      : 200px;
+  left     : 460px;
+  width    : 200px;
+  z-index  : 10;
+  }
+
+#deleteEnemy{
+  position : absolute;
+  top      : 170px;
+  left     : 150px;
+  width    : 60px;
+  }
+
+
+#targetEnemy{
+  position : absolute;
+  top      : 70px;
+  left     : 0px;
+  width    : 250px;
+  }
+
+#editInfo{
+  position : absolute;
+  top      : 0px;
+  left     : 0px;
+  }
+
+#enemyInfo{
+  position : absolute;
+  top      : 130px;
+  left     : 0px;
+  width    : 400px;
+  }
+
+
+#controlFrame{
+  position : absolute;
+  top      : 390px;
+  left     : 10px;
+  width    : 120px;
+  }
+    #frame{
+      position : absolute;
+      width    : 160px;
+      }
+    #start{
+      position : absolute;
+      top      : 40px;
+      width    : 120px;
+      }
+    #stop{
+      position : absolute;
+      top      : 80px;
+      width    : 120px;
+      }
+    #check{
+      position : absolute;
+      top      : 160px;
+      height   : 30px;
+      width    : 120px;
+      }
+    #increment{
+      position : absolute;
+      top      : 120px;
+      width    : 140px;
+      }
+
+
+#saveMain{
+  position : absolute;
+  top      : 15px;
+  left     : 830px;
+  height   : 30px;
+  width    : 120px;
+  }
+
+#editMove{
+  position : absolute;
+  top      : 50px;
+  left     : 500px;
+  }
+
+#addEnemyButton{
+  position : absolute;
+  top      : 0px;
+  left     : 10px;
+  width    : 180px;
+  }
+
+#addEnemyInfo{
+  position : absolute;
+  top      : 600px;
+  left     : -350px;
+  height   : 150px;
+  width    : 320px;
+  }
+
+#addEnemy{
+  position : absolute;
+  top      : 45px;
+  left     : 10px;
+  width    : 320px;
+  }
+
+#addEnemyCommit{
+  position : absolute;
+  top      : 60px;
+  left     : 240px;
+  width    : 40px;
+  }
+
+#addEnemyCancel{
+  position : absolute;
+  top      : 110px;
+  left     : 240px;
+  width    : 40px;
+  }
+
+#editInfoRegion{
+  position : absolute;
+  top      : 730px;
+  left     : 330px;
+  width    : 180px;
+  }
+
+#editInfo{
+  position : absolute;
+  top      : 0px;
+  left     : 0px;
+  width    : 310px;
+  }
+
+#editInfoCommit{
+  position : absolute;
+  top      : 60px;
+  left     : 230px;
+  }
+
+#editInfoCancel{
+  position : absolute;
+  top      : 120px;
+  left     : 230px;
+  }
+
+
+#addAction{
+  position : absolute;
+  top      : 780px;
+  left     : -350px;
+  width    : 310px;
+  }
+
+#addActionCommit{
+  position : absolute;
+  top      : 960px;
+  left     : -120px;
+  width    : 80px;
+  }
+
+#addActionCancel{
+  position : absolute;
+  top      : 1030px;
+  left     : -120px;
+  width    : 80px;
+  }
+
+.inputRegion{
+  position : absolute;
+  left     : 150px;
+  width    : 70px;
+  }
+
+.infoTable{
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size   : 14px;
+  width : 230px;
+  }
+
+.infoTable td{
+  width : 30px;
+  }
+
+.button {
+        height : 30px;
+        width : 180px;
+	//position: relative;
+	border-radius: 4px;
+	color: #fff;
+	line-height: 30px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0px 1px 0px #000045;
+        font-family: Meiryo;
+}
+.button,
+.button:hover {
+	border-bottom: 4px solid #003262;
+	background-color: #006778;
+	background-image: -webkit-linear-gradient(top, #aa88ff, #6644aa);
+	background-image: linear-gradient(to bottom, #aa88ff, #6644aa);
+	box-shadow: inset 1px 1px 0 #00c1d0;
+        border-radius: 10px;        /* CSS3草案 */  
+        -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+        -moz-border-radius: 10px;
+}
+.button::before,
+.button::after {
+	bottom: -1px;
+	left: -1px;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #000090;
+	border-bottom: 1px solid #004d5a;
+	border-radius: 4px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-transition: none;
+	transition: none;
+}
+.button::before {
+	height: 48px;
+	bottom: -4px;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 1px 1px 0px #bfbfbf;
+}
+.button:hover {
+	background: #f56778;
+	background-image: -webkit-linear-gradient(top, #6644aa, #aa88ff);
+	background-image: linear-gradient(to bottom, #6644aa, #aa88ff);
+	color: #003944;
+	text-shadow: 0px 1px 0px #f9a0ad;
+}
+.button:active {
+	bottom: -4px;
+	margin-bottom: 4px;
+	border: none;
+	box-shadow: 1px 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, .3);
+}
+.button:active::before,
+.button:active::after {
+	border: none;
+	box-shadow: none;
+}
