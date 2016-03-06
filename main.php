@@ -51,6 +51,10 @@
 
 </head>
 <body id="body">
+<!--------------------------->
+<!-- include OrbitControl  -->
+<!--------------------------->
+<script type="text/javascript" src="./api/OrbitControls.js"></script>
 <div id="menu">
   <script type="text/javascript" >
     Include.include("header.html"); 
@@ -154,6 +158,9 @@ var init = function(){
   renderer.setFaceCulling(THREE.CullFaceBack);
   canvas.appendChild(renderer.domElement);
 
+  controls = new THREE.OrbitControls(camera);
+  controls.center = new THREE.Vector3(0, 0, 0);
+
   //###
   //### ポストプロセスの設定
   //###
@@ -178,7 +185,6 @@ var init = function(){
   };
 
 
-
 //==============================================//
 // ### doKey ###                                //
 // 移動、shot 等キーアクションの設定            //
@@ -186,6 +192,11 @@ var init = function(){
 function doKey() {
 
   switch( game.playerState ){
+    //###
+    //### 矢印キーを押された際に true へ、true の時は OrbitComtrol の視点移動を禁止する
+    //###
+    var moveKeyFlag = false;
+
     case game.state["PLAY"] :
 
     //###
@@ -229,6 +240,8 @@ function doKey() {
       if( fran.charaMesh.position.z < -MAX_SCENE_Z ) return;
       fran.charaMesh.position.z -= moveSpeed;
       fran.chara.position.z = fran.charaMesh.position.z + OFFSET;
+
+      moveKeyFlag = true;
       }
 
     //###
@@ -238,6 +251,8 @@ function doKey() {
       if( fran.charaMesh.position.z > MAX_SCENE_Z ) return;
       fran.charaMesh.position.z += moveSpeed;
       fran.chara.position.z = fran.charaMesh.position.z + OFFSET;
+
+      moveKeyFlag = true;
       }
 
     //###
@@ -246,6 +261,8 @@ function doKey() {
     if( key.isDown( key.keyCode["KEY_LEFT"] ) ){
       if( fran.charaMesh.position.x < -MAX_SCENE_X ) return;
       fran.chara.position.x = fran.charaMesh.position.x -= moveSpeed;
+
+      moveKeyFlag = true;
       }
 
     //###
@@ -254,6 +271,19 @@ function doKey() {
     if( key.isDown( key.keyCode["KEY_RIGHT"] ) ){
       if( fran.charaMesh.position.x > MAX_SCENE_X ) return;
       fran.chara.position.x = fran.charaMesh.position.x += moveSpeed;
+
+      moveKeyFlag = true;
+      }
+
+    //###
+    //### ENTER キー
+    //###
+    if( key.isDown( key.keyCode["KEY_ENTER"] ) ){
+      camera.position.y = 3000;// カメラの位置
+      camera.position.z = 0;// カメラの位置
+      camera.lookAt(CAMERA_FOCUS);
+
+      moveKeyFlag = true;
       }
     break;
 
@@ -262,7 +292,10 @@ function doKey() {
     //###
     case game.state["GAMEOVER"] :
       if( key.isDown( key.keyCode["KEY_UP"] ) ||
-          key.isDown( key.keyCode["KEY_DOWN"] )) gameover.chageFocus();
+          key.isDown( key.keyCode["KEY_DOWN"] )){
+        gameover.chageFocus();
+        moveKeyFlag = true;
+        }
 
       if( key.isDown( key.keyCode["KEY_ENTER"] )){
         switch( gameover.focus ){
@@ -280,6 +313,8 @@ function doKey() {
         }      
       break;   
     }
+
+  return moveKeyFlag;
   }
 
 
@@ -303,12 +338,13 @@ var animate = function() {
         //###
         //### key action を実行
         //###
-        doKey();
+        if(doKey() == false) controls.update();
 
         //###
         //### 背景画像の回転
         //###
         backGround.rotateBackGround();
+
 
         //###
         //### 最後に rendering
