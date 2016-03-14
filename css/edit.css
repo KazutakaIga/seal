@@ -284,14 +284,14 @@
 
 #addActionCommit{
   position : absolute;
-  top      : 960px;
+  top      : 860px;
   left     : -120px;
   width    : 80px;
   }
 
 #addActionCancel{
   position : absolute;
-  top      : 1030px;
+  top      : 920px;
   left     : -120px;
   width    : 80px;
   }
