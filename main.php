@@ -158,8 +158,8 @@ var init = function(){
   renderer.setFaceCulling(THREE.CullFaceBack);
   canvas.appendChild(renderer.domElement);
 
-  controls = new THREE.OrbitControls(camera);
-  controls.center = new THREE.Vector3(0, 0, 0);
+  //controls = new THREE.OrbitControls(camera);
+  //controls.center = new THREE.Vector3(0, 0, 0);
 
   //###
   //### ポストプロセスの設定
@@ -191,11 +191,11 @@ var init = function(){
 //==============================================//
 function doKey() {
 
+  //###
+  //### 矢印キーを押された際に true へ、true の時は OrbitComtrol の視点移動を禁止する
+  //###
+  var moveKeyFlag = false;
   switch( game.playerState ){
-    //###
-    //### 矢印キーを押された際に true へ、true の時は OrbitComtrol の視点移動を禁止する
-    //###
-    var moveKeyFlag = false;
 
     case game.state["PLAY"] :
 
@@ -338,7 +338,8 @@ var animate = function() {
         //###
         //### key action を実行
         //###
-        if(doKey() == false) controls.update();
+        //if(doKey() == false) controls.update();
+        doKey();
 
         //###
         //### 背景画像の回転
