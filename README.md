@@ -9,9 +9,11 @@ Sealing (2D like 3D shooting game, which describe with THREE.js)
 + Base Model is MMD format(.pmx)
 + converted pmx to JSON by Blender(https://www.blender.org/)
 
+<!-- 
 ## Screen Shot
-#***
-#![リンクテキスト](http://i.imgur.com/LFkUOlg.jpg "タイトル")
+***
+![リンクテキスト](http://i.imgur.com/LFkUOlg.jpg "タイトル")
+-->
 
 ## Installation
 ***
