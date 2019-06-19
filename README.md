@@ -1,7 +1,7 @@
 Name
 ===
 Sealing (2D like 3D shooting game, which describe with THREE.js)
-![sample](https://github.com/KazutakaIga/seal/blob/images/img.jpg)
+![sample](https://github.com/KazutakaIga/seal/img.jpg)
 
 ## Description/Feature
 ***
